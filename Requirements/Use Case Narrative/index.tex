@@ -1,0 +1,2694 @@
+\subsection{Use Case Narratives}
+
+% ISHAN LEFT SIDE USE CASE NARRATIVES
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & User Registration \\
+        \hline
+        \textbf{Primary Actor(s)} & New User \\
+        \hline
+        \textbf{Description} & New users can register for an account on the platform to access features and participate in activities. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user navigates to the registration page.
+            \item The user fills out the registration form with required information (e.g., name, email, password).
+            \item The system validates the input information.
+            \item The system checks for any existing account with the same email.
+            \item The system creates a new user account and saves the information in the database.
+            \item The system sends a confirmation email to the user's provided email address.
+            \item The user receives the confirmation email and clicks the verification link.
+            \item The system verifies the user's email address and activates the account.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user does not receive the confirmation email.
+            \item The user can request a new confirmation email to be sent.
+        \end{enumerate} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The new user account is created and activated.
+            \item The user can log in to the platform using their new account.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: User Registration}
+    \label{tab:use-case-user-registration}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & Change Password \\
+        \hline
+        \textbf{Primary Actor(s)} & User \\
+        \hline
+        \textbf{Description} & Users can search for items listed by the company. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The search functionality is accessible on the user interface.
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user navigates to the search bar on the web application.
+            \item The user enters keywords related to the item they are looking for.
+            \item The system validates the input and processes the search query.
+            \item The system retrieves a list of items that match the search criteria from the database.
+            \item The system displays the list of matching items to the user.
+            \item The user views the search results and can choose to view item details, add items to the cart, or perform another search.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item A list of items that match the search criteria is displayed to the user.
+            \item The user is informed that no items were found, and they are prompted to refine their search.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Change Password}
+    \label{tab:use-case-change-password}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & Edit Profile \\
+        \hline
+        \textbf{Primary Actor(s)} & User \\
+        \hline
+        \textbf{Description} & Users can edit their profile information including personal details and preferences. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user must be logged into their account.
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user navigates to their profile page.
+            \item The user clicks on the "Edit Profile" button.
+            \item The system displays a form with the user's current profile information.
+            \item The user updates their profile information as desired.
+            \item The user submits the changes.
+            \item The system validates the changes and updates the profile information in the database.
+            \item The system confirms the update and displays the updated profile to the user.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user's profile is successfully updated with the new information.
+            \item The system displays the updated profile information to the user.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Edit Profile}
+    \label{tab:use-case-edit-profile}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & Forget Password \\
+        \hline
+        \textbf{Primary Actor(s)} & User \\
+        \hline
+        \textbf{Description} & Users can reset their password if they have forgotten it. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user must have a registered account and access to the email address associated with the account.
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user navigates to the login page and clicks on "Forgot Password".
+            \item The system displays a form for the user to enter their registered email address.
+            \item The user enters their registered email address and submits the form.
+            \item The system validates the email address and sends a password reset link to the user's email.
+            \item The user receives the email and clicks on the reset link.
+            \item The system displays a form to enter a new password.
+            \item The user enters a new password and confirms it.
+            \item The system validates the new password and updates the user's account.
+            \item The system confirms the password change and prompts the user to log in with the new password.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{enumerate}[label=--,itemsep=0pt]
+            \item If the user enters an invalid email address, the system displays an error message and prompts the user to re-enter the email address.
+        \end{enumerate} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{enumerate}[label=--,itemsep=0pt]
+            \item If the new password does not meet the security criteria, the system displays an error message and prompts the user to enter a different password.
+        \end{enumerate} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{enumerate}[label=--,itemsep=0pt]
+            \item The user's password is successfully reset, and they can log in with the new password.
+            \item The user receives a confirmation email about the password reset.
+        \end{enumerate} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Forget Password}
+    \label{tab:use-case-forget-password}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & View Dashboard \\
+        \hline
+        \textbf{Primary Actor(s)} & User \\
+        \hline
+        \textbf{Description} & Users can view a summary of their activities, statistics, and other relevant information on their dashboard. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user must be logged into their account.
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user navigates to the dashboard page.
+            \item The system retrieves the user's data from the database.
+            \item The system processes and aggregates the data for display.
+            \item The system displays the dashboard with relevant information to the user.
+            \item The user interacts with the dashboard to view detailed information or perform other actions.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user's dashboard is successfully displayed with the relevant information.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Dashboard}
+    \label{tab:use-case-view-dashboard}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & Log out \\
+        \hline
+        \textbf{Primary Actor(s)} & User \\
+        \hline
+        \textbf{Description} & Users can log out of the application to end their session securely. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user must be logged into their account.
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user clicks on the logout button.
+            \item The system processes the logout request.
+            \item The system ends the user's session.
+            \item The user is redirected to the login page or homepage.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user's session is securely ended.
+            \item The user is redirected to the login page or homepage.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Log out}
+    \label{tab:use-case-log-out}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & View Advertisement \\
+        \hline
+        \textbf{Primary Actor(s)} & User \\
+        \hline
+        \textbf{Description} & Users can view advertisements posted by organizations on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user navigates to the advertisement section.
+            \item The system retrieves the list of advertisements from the database.
+            \item The system displays the list of advertisements to the user.
+            \item The user selects an advertisement to view more details.
+            \item The system displays the details of the selected advertisement.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user views the list of available advertisements.
+            \item The user views the details of a selected advertisement.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Advertisement}
+    \label{tab:use-case-view-advertisement}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & Search Organizations \\
+        \hline
+        \textbf{Primary Actor(s)} & User \\
+        \hline
+        \textbf{Description} & Users can search for organizations registered on the platform to view their profiles and activities. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Organizations must be registered on the platform.
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user navigates to the search bar on the web application.
+            \item The user enters keywords related to the organization they are looking for.
+            \item The system validates the input and processes the search query.
+            \item The system retrieves a list of organizations that match the search criteria from the database.
+            \item The system displays the list of matching organizations to the user.
+            \item The user views the search results and can choose to view organization profiles.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item A list of organizations that match the search criteria is displayed to the user.
+            \item The user can view the profiles of the organizations found in the search.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Search Organizations}
+    \label{tab:use-case-search-organizations}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & Search Events \\
+        \hline
+        \textbf{Primary Actor(s)} & User \\
+        \hline
+        \textbf{Description} & Users can search for events hosted by organizations registered on the platform to view event details and participate. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user navigates to the search bar on the web application.
+            \item The user enters keywords related to the event they are looking for.
+            \item The system validates the input and processes the search query.
+            \item The system retrieves a list of events that match the search criteria from the database.
+            \item The system displays the list of matching events to the user.
+            \item The user views the search results and can choose to view event details.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item A list of events that match the search criteria is displayed to the user.
+            \item The user can view the details of the events found in the search.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Search Events}
+    \label{tab:use-case-search-events}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & Search Sponsors \\
+        \hline
+        \textbf{Primary Actor(s)} & User \\
+        \hline
+        \textbf{Description} & Users can search for sponsors registered on the platform to view their profiles and details. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user must be logged into their account.
+            \item The search functionality for sponsors is accessible on the user interface.
+            \item Sponsors must be registered on the platform.
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user navigates to the search bar on the web application.
+            \item The user enters keywords related to the sponsor they are looking for.
+            \item The system validates the input and processes the search query.
+            \item The system retrieves a list of sponsors that match the search criteria from the database.
+            \item The system displays the list of matching sponsors to the user.
+            \item The user views the search results and can choose to view sponsor profiles.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item A list of sponsors that match the search criteria is displayed to the user.
+            \item The user can view the profiles of the sponsors found in the search.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Search Sponsors}
+    \label{tab:use-case-search-sponsors}
+\end{table}
+
+
+% THEEKSHANA USE CASE NARRATIVES
+
+%\subsubsection*{Use Case: Register}
+\begin{table}[!ht]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Submit Needs \\
+        \hline
+        \textbf{Primary Actor(s)} & Requester \\
+        \hline
+        \textbf{Description} & This use case describes the process for a requester (individual or group) to submit a need for donations on the platform. The need is reviewed by a moderator before being made visible to potential donors, organizations, and sponsors. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+                \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The requester must be registered and logged into the platform.
+            \item The requester must have valid contact information.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The requester logs into the platform.
+            \item Access Form: The requester navigates to "Submit Needs."
+            \item Complete Form: The requester fills in the need details, contact information, and documentation.
+            \item Submit Form: The requester submits the form.
+            \item Confirmation: The platform confirms submission and pending review.
+            \item Review: A moderator reviews the need.
+            \item Approval: If approved, the need is published and made visible.
+        \end{enumerate} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The need is successfully submitted and awaits verification.
+            \item The need is reviewed and, if approved, is made visible to donors, organizations, and sponsors.
+            \item The requester receives a notification regarding the status of their submission.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    % \caption{use}
+    \label{tab:use-case-register}
+    \caption{Use Case: Submit Needs}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Update Needs \\
+        \hline
+        \textbf{Primary Actor(s)} & Requester \\
+        \hline
+        \textbf{Description} & This use case describes the process for a requester to update an existing need for donations on the platform, ensuring that the information remains accurate and current.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The requester must be registered and logged into the platform.
+            \item The requester must have an existing need already submitted.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The requester logs into the platform.
+            \item Access Needs: The requester navigates to their submitted needs.
+            \item Select Need: The requester selects the need to update.
+            \item Update Information: The requester updates the need details, contact information, and documentation as required.
+            \item Submit Updates: The requester submits the updated information.
+            \item Confirmation: The platform confirms the update and notifies the requester.
+            \item Review: A moderator reviews the updates for legitimacy and compliance.
+            \item Approval: If approved, the updated need is published.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Incomplete Information: The requester is prompted to complete all required fields before submission.
+            \item Need More Information: The moderator requests additional information for the update.
+        \end{itemize} \\
+        \hline
+
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The need is successfully updated and awaits verification.
+            \item The updated need is reviewed and, if approved, is made visible to donors, organizations, and sponsors.
+            \item The requester receives a notification regarding the status of their update.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Update Needs}
+    \label{tab:use-case-register}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Delete Needs \\
+        \hline
+        \textbf{Primary Actor(s)} & Requester \\
+        \hline
+        \textbf{Description} & This use case describes the process for a requester to delete an existing need for donations from the platform.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The requester must be registered and logged into the platform.
+            \item The requester must have an existing need already submitted.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The requester logs into the platform.
+            \item Confirm Deletion: The requester confirms the deletion.
+            \item Confirmation: The platform confirms the deletion and removes the need.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenario} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The requester sends a support ticket to the system.
+            \item Requesting to delete the need after getting connected with an organization.
+        \end{enumerate} \\
+        \hline
+        \textbf{Exception} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The requester cannot delete needs directly after an organization accepts a need.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The need is successfully deleted from the platform.
+            \item The requester receives a notification confirming the deletion.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Delete Needs}
+    \label{tab:use-case-register}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & View matching organizations \\
+        \hline
+        \textbf{Primary Actor(s)} & Requester \\
+        \hline
+        \textbf{Description} & This use case describes the process for a requester, donor, or sponsor to view organizations that match their criteria or needs for donation activities.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The requester must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The requester logs into the platform.
+            \item Access Matching Organizations: The user navigates to the "Matching Organizations" section.
+            \item Input Criteria: The user inputs criteria for matching (e.g., location, type of need).
+            \item Search: The user initiates the search for matching organizations.
+            \item View Results: The platform displays a list of matching organizations.
+            \item Select Organization: The user selects an organization to view more details.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenario} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item No Criteria: The user views all organizations without inputting specific criteria.
+            \item No Matches Found: The platform informs the user that no matching organizations are found.
+        \end{enumerate} \\
+        \hline
+        \textbf{Exception} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user successfully views a list of matching organizations.
+            \item The user can access detailed information about the selected organizations.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View matching organizations}
+    \label{tab:use-case-register}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Communication with organizations \\
+        \hline
+        \textbf{Primary Actor(s)} & Requester \\
+        \hline
+        \textbf{Description} & This use case describes the process for a requester, donor, or sponsor to communicate with organizations on the platform for coordination and inquiries regarding donations.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The requester must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The requester logs into the platform.
+            \item Access Organizations: The user navigates to the "Organizations" section.
+            \item Select Organization: The user selects an organization to communicate with.
+            \item Initiate Communication: The user initiates communication via the platform's messaging system.
+            \item Send Message: The user composes and sends a message to the organization.
+            \item Receive Confirmation: The platform confirms that the message has been sent.
+            \item Receive Response: The user receives a response from the organization.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenario} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Direct Contact: The user uses provided contact information to communicate directly via email or phone.
+            \item No Response: The user does not receive a response and follows up with another message.
+        \end{enumerate} \\
+        \hline
+        \textbf{Exception} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user successfully communicates with the organization.
+            \item The user receives necessary information or coordination details from the organization.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Communication with organizations}
+    \label{tab:use-case-register}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Track Submission Status \\
+        \hline
+        \textbf{Primary Actor(s)} & Requester \\
+        \hline
+        \textbf{Description} &  This use case describes the process for a requester to track the status of their submitted needs on the platform.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The requester must be registered and logged into the platform.
+            \item The requester must have an existing submitted need.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The requester logs into the platform.
+            \item Access Submission Status: The requester navigates to the "Submission Status" section.
+            \item View Submissions: The requester views a list of their submitted needs.
+            \item Select Submission: The requester selects a specific submission to view its status.
+            \item View Status Details: The requester views detailed status information (e.g., pending, approved, rejected).
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenario} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item None
+        \end{enumerate} \\
+        \hline
+        \textbf{Exception} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The requester successfully tracks the status of their submissions.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Track Submission Status}
+    \label{tab:use-case-register}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Track Submission Status \\
+        \hline
+        \textbf{Primary Actor(s)} & Requester \\
+        \hline
+        \textbf{Description} &  This use case describes the process for a requester to track the status of their submitted needs on the platform.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The requester must be registered and logged into the platform.
+            \item The requester must have an existing submitted need.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The requester logs into the platform.
+            \item Access Submission Status: The requester navigates to the "Submission Status" section.
+            \item View Submissions: The requester views a list of their submitted needs.
+            \item Select Submission: The requester selects a specific submission to view its status.
+            \item View Status Details: The requester views detailed status information (e.g., pending, approved, rejected).
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenario} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Exception} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The requester successfully tracks the status of their submissions.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Track Submission Status}
+    \label{tab:use-case-register}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Provide Feedback \\
+        \hline
+        \textbf{Primary Actor(s)} & Requester \\
+        \hline
+        \textbf{Description} &  This use case describes the process for users to provide feedback on their experiences with the platform or specific interactions.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Access Feedback Section: The user navigates to the "Feedback" section.
+            \item Select Feedback Type: The user selects the type of feedback (e.g., general platform feedback, specific interaction 
+            \item Provide Feedback: The user fills in the feedback form with their comments and ratings.
+            \item Submit Feedback: The user submits the completed feedback form.
+            \item Access Feedback Section: The user navigates to the "Feedback" section.
+            \item Confirmation: The platform confirms that the feedback has been received.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The requester logs into the platform.
+            \item Access Submission Status: The requester navigates to the "Submission Status" section.
+            \item View Submissions: The requester views a list of their submitted needs.
+            \item Select Submission: The requester selects a specific submission to view its status.
+            \item View Status Details: The requester views detailed status information (e.g., pending, approved, rejected).
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user successfully provides feedback on the platform.
+            \item The platform stores the feedback for review and potential action by the admin or moderators.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Provide Feedback}
+    \label{tab:use-case-register}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & View Opportunities \\
+        \hline
+        \textbf{Primary Actor(s)} & Sponsor \\
+        \hline
+        \textbf{Description} &  This use case describes the process for donors, sponsors, and organizations to view available opportunities for donations or collaborations on the platform.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The user logs into the platform.
+            \item Access Opportunities Section: The user navigates to the "Opportunities" section.
+            \item Filter Opportunities: The user applies filters (e.g., location, type of need) to narrow down opportunities.
+            \item View Opportunities: The platform displays a list of matching opportunities.
+            \item Access Feedback Section: The user navigates to the "Feedback" section.
+            \item Select Opportunity: The user selects an opportunity to view detailed information.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item No Filters Applied: The user views all available opportunities without applying specific filters.
+            \item No Matches Found: The platform informs the user that no matching opportunities are found.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user successfully views a list of opportunities.
+            \item The user accesses detailed information about selected opportunities.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Opportunities}
+    \label{tab:use-case-register}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Contact Organizations \\
+        \hline
+        \textbf{Primary Actor(s)} & Sponsor \\
+        \hline
+        \textbf{Description} &  This use case describes the process for a sponsor to contact organizations for potential collaborations or to offer donations.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The user logs into the platform.
+            \item Access Organizations Section: The sponsor navigates to the "Organizations" section.
+            \item Select Organization: The sponsor selects an organization to contact.
+            \item Initiate Contact: The sponsor initiates contact via the platform's messaging system.
+            \item Compose Message: The sponsor composes and sends a message to the organization.
+            \item Receive Confirmation: The platform confirms that the message has been sent.
+            \item Receive Response: The sponsor receives a response from the organization.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The sponsor receives necessary information or coordination details from the organization.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Contact Organizations}
+    \label{tab:use-case-register}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Manage Sponsorship Requirements \\
+        \hline
+        \textbf{Primary Actor(s)} & Sponsor \\
+        \hline
+        \textbf{Description} &  This use case describes the process for a sponsor to manage their sponsorship requirements on the platform, including specifying criteria and conditions for their donations.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The user logs into the platform.
+            \item Access Sponsorship Section: The sponsor navigates to the "Sponsorship Requirements" section.
+            \item Add New Requirements: The sponsor adds new sponsorship requirements, including criteria and conditions.
+            \item Edit Existing Requirements: The sponsor updates existing sponsorship requirements.
+            \item Delete Requirements: The sponsor deletes obsolete or fulfilled requirements.
+            \item Save Changes: The sponsor saves the changes
+            \item Confirmation: The platform confirms that the sponsorship requirements have been updated.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Incomplete Information: The sponsor is prompted to complete all required fields before saving.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The sponsorship requirements are successfully managed and updated on the platform.
+            \item The sponsor receives a confirmation of the changes.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Manage Sponsorship Requirements}
+    \label{tab:use-case-register}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Manage View Impact Reports \\
+        \hline
+        \textbf{Primary Actor(s)} & Sponsor \\
+        \hline
+        \textbf{Description} &  This use case describes the process for a sponsor to view impact reports that detail how their donations have been utilized and the outcomes achieved.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user must be registered and logged into the platform.
+            \item There must be impact reports available related to the sponsor's donations.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The user logs into the platform.
+            \item Access Impact Reports Section: The sponsor navigates to the "Impact Reports" section.
+            \item View Reports: The sponsor views a list of available impact reports.
+            \item Select Report: The sponsor selects a specific impact report to view detailed information.
+            \item Review Impact: The sponsor reviews the detailed impact of their donations.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Filter Reports: The sponsor applies filters to narrow down the list of reports based on date, organization, or type of impact.
+            \item Download Report: The sponsor downloads the impact report for offline review.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item No Reports Available: The sponsor is notified that there are no impact reports available for their donations.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The sponsor successfully views and reviews the impact reports.
+            \item The sponsor gains insight into the effectiveness and outcomes of their donations.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Impact Reports}
+    \label{tab:use-case-register}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Collaborate with Organizations \\
+        \hline
+        \textbf{Primary Actor(s)} & Sponsor, Organization \\
+        \hline
+        \textbf{Description} &  This use case describes the process for sponsors to collaborate on donation initiatives and projects through the platform.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The user logs into the platform.
+            \item Initiate Collaboration: The sponsor initiates a collaboration request.
+            \item Confirm Collaboration: Both parties confirm the collaboration and set up a project.
+            \item Track Progress: The platform provides tools for tracking the progress of the collaborative project.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Adjust Terms: The parties adjust the terms of collaboration if initial terms are not agreeable.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The sponsor and organization successfully establish a collaboration.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Collaborate with Organizations}
+    \label{tab:use-case-register}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Reject Request \\
+        \hline
+        \textbf{Primary Actor(s)} & Sponsor \\
+        \hline
+        \textbf{Description} &  This use case describes the process for a sponsor to reject a donation request received from a requester or organization.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user must be registered and logged into the platform.
+            \item The sponsor must have received a donation request.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The user logs into the platform.
+            \item Access Requests: The sponsor navigates to the "Requests" section.
+            \item View Request: The sponsor views the details of a received donation request.
+            \item Reject Request: The sponsor selects the option to reject the request.project.
+            \item Provide Reason: The sponsor provides a reason for rejecting the request (optional).
+            \item Confirm Rejection: The sponsor confirms the rejection.
+            \item Notify Requester: The platform notifies the requester or organization of the rejection.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item No Reason Provided: The sponsor skips providing a reason for the rejection.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The donation request is successfully rejected.
+            \item The requester or organization is notified of the rejection.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Reject Request}
+    \label{tab:use-case-register}
+\end{table}
+
+
+% ADMIN PART HERE
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & View System Analytics \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin \\
+        \hline
+        \textbf{Description} &  This use case describes the process for an admin to view system analytics, including usage statistics, user activity, and performance metrics.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The user logs into the platform.
+            \item Access Admin Dashboard: The admin navigates to the "Admin Dashboard" section.
+            \item View Analytics: The platform displays the selected analytics data in a comprehensible format.
+            \item Filter Data: The admin applies filters to narrow down the data (e.g., date range, user type).
+            \item Generate Report: The admin generates a report based on the viewed analytics.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Export Data: The admin exports the analytics data for further analysis
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The admin successfully views and analyzes system analytics.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View System Analytics}
+    \label{tab:use-case-register}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & View Admin Dashboard \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin \\
+        \hline
+        \textbf{Description} &  This use case describes the process for an admin to view the admin dashboard, which provides an overview of key metrics, system status, and administrative controls.\\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The user must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The user logs into the platform.
+            \item Access Admin Dashboard: The admin navigates to the "Admin Dashboard" section.
+            \item Access Detailed Metrics: The admin clicks on specific metrics for more detailed information.
+            \item Utilize Administrative Controls: The admin uses available controls to manage users, requests, and other administrative tasks.
+        \end{enumerate} \\
+        
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Access Reports: The admin accesses detailed reports directly from the dashboard.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The admin successfully views and interacts with the admin dashboard.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Admin Dashboard}
+    \label{tab:use-case-register}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-016 \\
+        \hline
+        \textbf{Use Case Name} & Manage Moderator Account \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin to manage moderator accounts, including creating and removing accounts. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin logs into the platform.
+            \item Access Moderator Management: The admin navigates to the "Moderator Management" section.
+            \item Create Moderator Account: The admin fills in the necessary details and creates a new moderator account.
+            \item Remove Moderator Account: The admin selects an existing moderator account and removes it from the platform.
+            \item Save Changes: The admin saves the changes made to the moderator accounts.
+            \item Confirmation: The platform confirms that the changes have been successfully made.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Edit Moderator Account: The admin edits the details of an existing moderator account.
+            \item Revoke Access: The admin temporarily revokes access for a moderator instead of removing the account.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The moderator accounts are successfully managed (created, edited, or removed).
+            \item The admin receives confirmation of the changes.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Manage Moderator Account}
+    \label{tab:use-case-register}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-016-1 \\
+        \hline
+        \textbf{Use Case Name} & Create Account \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin to manage moderator accounts, including creating and removing accounts. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin logs into the platform.
+            \item Access Account Creation: The admin navigates to the "Account Creation" section.
+            \item Fill in Details: The admin fills in the necessary details for the new account.
+            \item Submit Account: The admin submits the new account information.
+            \item Confirmation: The platform confirms that the new account has been created successfully.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Incomplete Information: The admin is prompted to complete all required fields before submitting.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The new account is successfully created.
+            \item The admin receives confirmation of the account creation.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Create Account}
+    \label{tab:use-case-create-account}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-016-2 \\
+        \hline
+        \textbf{Use Case Name} & Remove Account \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin to remove an existing account from the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin must be registered and logged into the platform.
+            \item There must be an existing account to remove.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin logs into the platform.
+            \item Access Account Management: The admin navigates to the "Account Management" section.
+            \item Select Account: The admin selects the account to be removed.
+            \item Confirm Removal: The admin confirms the removal of the account.
+            \item Notification: The platform notifies the admin that the account has been successfully removed.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Archive Account: The admin archives the account instead of permanently removing it.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The account is successfully removed from the platform.
+            \item The admin receives confirmation of the account removal.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Remove Account}
+    \label{tab:use-case-remove-account}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-017 \\
+        \hline
+        \textbf{Use Case Name} & Suspend Account \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Generalization} & Suspend Organization, Suspend User, Suspend Requester, Suspend Sponsor \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to suspend various types of accounts, including organizations, users, requesters, and sponsors, to temporarily restrict their access to the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The account to be suspended must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Account Management: The admin or moderator navigates to the "Account Management" section.
+            \item Select Account Type: The admin or moderator selects the type of account to suspend (organization, user, requester, sponsor).
+            \item Choose Account: The admin or moderator selects the specific account to suspend.
+            \item Initiate Suspension: The admin or moderator initiates the suspension process.
+            \item Confirm Suspension: The admin or moderator confirms the suspension.
+            \item Notification: The platform notifies the account holder of the suspension.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Temporary Suspension: The admin or moderator sets a specific duration for the suspension.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Account Not Found: The platform notifies the admin or moderator if the selected account does not exist.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The selected account is successfully suspended.
+            \item The account holder is notified of the suspension and restricted access.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Suspend Account}
+    \label{tab:use-case-suspend-account}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-017-1 \\
+        \hline
+        \textbf{Use Case Name} & Suspend Organization \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to suspend an organization account on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin or moderator must be logged into the platform.
+            \item The organization account must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Account Management: The admin or moderator navigates to the "Organization Management" section.
+            \item Select Organization: The admin or moderator selects the organization to suspend.
+            \item Initiate Suspension: The admin or moderator initiates the suspension.
+            \item Confirm Suspension: The admin or moderator confirms the suspension.
+            \item Notification: The organization is notified of the suspension.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Set Duration: The admin or moderator sets a suspension duration.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Invalid Login Credentials: The admin or moderator is prompted to re-enter credentials or reset the password.
+            \item Organization Not Found: The platform notifies the admin or moderator if the organization is not found.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The organization account is suspended and restricted.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Suspend Organization}
+    \label{tab:use-case-suspend-organization}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-017-2 \\
+        \hline
+        \textbf{Use Case Name} & Suspend User \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to suspend a user account on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin or moderator must be logged into the platform.
+            \item The user account must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Account Management: The admin or moderator navigates to the "User Management" section.
+            \item Select User: The admin or moderator selects the user to suspend.
+            \item Initiate Suspension: The admin or moderator initiates the suspension.
+            \item Confirm Suspension: The admin or moderator confirms the suspension.
+            \item Notification: The user is notified of the suspension.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Set Duration: The admin or moderator sets a suspension duration.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Invalid Login Credentials: The admin or moderator is prompted to re-enter credentials or reset the password.
+            \item User Not Found: The platform notifies the admin or moderator if the user is not found.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The user account is suspended and restricted.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Suspend User}
+    \label{tab:use-case-suspend-user}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-017-3 \\
+        \hline
+        \textbf{Use Case Name} & Suspend Requester \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to suspend a requester account on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin or moderator must be logged into the platform.
+            \item The requester account must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Account Management: The admin or moderator navigates to the "Requester Management" section.
+            \item Select Requester: The admin or moderator selects the requester to suspend.
+            \item Initiate Suspension: The admin or moderator initiates the suspension.
+            \item Confirm Suspension: The admin or moderator confirms the suspension.
+            \item Notification: The requester is notified of the suspension.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Set Duration: The admin or moderator sets a suspension duration.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Invalid Login Credentials: The admin or moderator is prompted to re-enter credentials or reset the password.
+            \item Requester Not Found: The platform notifies the admin or moderator if the requester is not found.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The requester account is suspended and restricted.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Suspend Requester}
+    \label{tab:use-case-suspend-requester}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-017-4 \\
+        \hline
+        \textbf{Use Case Name} & Suspend Sponsor \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to suspend a sponsor account on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin or moderator must be logged into the platform.
+            \item The sponsor account must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Account Management: The admin or moderator navigates to the "Sponsor Management" section.
+            \item Select Sponsor: The admin or moderator selects the sponsor to suspend.
+            \item Initiate Suspension: The admin or moderator initiates the suspension.
+            \item Confirm Suspension: The admin or moderator confirms the suspension.
+            \item Notification: The sponsor is notified of the suspension.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Set Duration: The admin or moderator sets a suspension duration.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Invalid Login Credentials: The admin or moderator is prompted to re-enter credentials or reset the password.
+            \item Sponsor Not Found: The platform notifies the admin or moderator if the sponsor is not found.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The sponsor account is suspended and restricted.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Suspend Sponsor}
+    \label{tab:use-case-suspend-sponsor}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-018 \\
+        \hline
+        \textbf{Use Case Name} & View Profile \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Generalization} & View Organization, View User Profile, View Requester Profile, View Sponsor Profile \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to view profiles of various account types, including organizations, users, requesters, and sponsors, to review their details and status. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin or moderator must be registered and logged into the platform.
+            \item The profile to be viewed must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Profile Management: The admin or moderator navigates to the "Profile Management" section.
+            \item Select Profile Type: The admin or moderator selects the type of profile to view (organization, user, requester, sponsor).
+            \item Choose Specific Profile: The admin or moderator selects the specific profile to view.
+            \item View Profile Details: The admin or moderator views the details of the selected profile, including relevant information and status.
+            \item Exit Profile View: The admin or moderator exits the profile view.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Search Profile: The admin or moderator uses a search function to locate the specific profile.
+            \item Edit Profile: The admin or moderator accesses an option to edit the profile details.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The admin or moderator successfully views the selected profile details.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Profile}
+    \label{tab:use-case-view-profile}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-018-1 \\
+        \hline
+        \textbf{Use Case Name} & View Organization \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to view details of an organization profile on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin or moderator must be logged into the platform.
+            \item The organization profile must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Profile Management: The admin or moderator navigates to the "Organization Management" section.
+            \item Select Organization: The admin or moderator selects the organization profile to view.
+            \item View Details: The admin or moderator views the organization's details, including name, contact information, and status.
+            \item Exit Profile View: The admin or moderator exits the profile view.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Search Organization: The admin or moderator uses a search function to locate the specific organization profile.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Organization Not Found: The platform notifies the admin or moderator if the organization profile is not found.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The admin or moderator successfully views the organization profile details.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Organization}
+    \label{tab:use-case-view-organization}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-018-2 \\
+        \hline
+        \textbf{Use Case Name} & View User Profile \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to view details of a user profile on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin or moderator must be logged into the platform.
+            \item The user profile must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Profile Management: The admin or moderator navigates to the "User Management" section.
+            \item Select User: The admin or moderator selects the user profile to view.
+            \item View Details: The admin or moderator views the user's details, including name, contact information, and status.
+            \item Exit Profile View: The admin or moderator exits the profile view.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Search User: The admin or moderator uses a search function to locate the specific user profile.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item User Not Found: The platform notifies the admin or moderator if the user profile is not found.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The admin or moderator successfully views the user profile details.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View User Profile}
+    \label{tab:use-case-view-user-profile}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-018-3 \\
+        \hline
+        \textbf{Use Case Name} & View Requester Profile \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to view details of a requester profile on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin or moderator must be logged into the platform.
+            \item The requester profile must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Profile Management: The admin or moderator navigates to the "Requester Management" section.
+            \item Select Requester: The admin or moderator selects the requester profile to view.
+            \item View Details: The admin or moderator views the requester's details, including name, contact information, and request history.
+            \item Exit Profile View: The admin or moderator exits the profile view.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Search Requester: The admin or moderator uses a search function to locate the specific requester profile.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Requester Not Found: The platform notifies the admin or moderator if the requester profile is not found.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The admin or moderator successfully views the requester profile details.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Requester Profile}
+    \label{tab:use-case-view-requester-profile}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-018-4 \\
+        \hline
+        \textbf{Use Case Name} & View Sponsor Profile \\
+        \hline
+        \textbf{Primary Actor(s)} & Admin, Moderator \\
+        \hline
+        \textbf{Description} & This use case describes the process for an admin or moderator to view details of a sponsor profile on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The admin or moderator must be logged into the platform.
+            \item The sponsor profile must exist.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The admin or moderator logs into the platform.
+            \item Access Profile Management: The admin or moderator navigates to the "Sponsor Management" section.
+            \item Select Sponsor: The admin or moderator selects the sponsor profile to view.
+            \item View Details: The admin or moderator views the sponsor's details, including name, contact information, and sponsorship history.
+            \item Exit Profile View: The admin or moderator exits the profile view.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Search Sponsor: The admin or moderator uses a search function to locate the specific sponsor profile.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Sponsor Not Found: The platform notifies the admin or moderator if the sponsor profile is not found.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The admin or moderator successfully views the sponsor profile details.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Sponsor Profile}
+    \label{tab:use-case-view-sponsor-profile}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-019 \\
+        \hline
+        \textbf{Use Case Name} & View Dashboard \\
+        \hline
+        \textbf{Primary Actor(s)} & Moderator \\
+        \hline
+        \textbf{Description} & This use case describes how a moderator views their dashboard to monitor and manage platform activities, including reviewing submitted needs, managing requests, and overseeing other platform activities. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The moderator must be registered and logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The moderator logs into the platform.
+            \item Access Dashboard: The moderator navigates to the dashboard section.
+            \item View Dashboard: The moderator views the dashboard displaying key metrics, notifications, and management options.
+            \item Review Activities: The moderator reviews recent activities, submitted needs, and pending actions.
+            \item Manage Requests: The moderator manages requests and updates as needed.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Filter/View Specific Data: The moderator filters or searches for specific data or activities on the dashboard.
+            \item Update Dashboard Settings: The moderator updates dashboard settings or preferences.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Invalid Login Credentials: The moderator is prompted to re-enter credentials or reset the password.
+            \item Dashboard Access Issues: The platform notifies the moderator if there are issues accessing the dashboard.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The moderator successfully views and interacts with the dashboard, managing platform activities as needed.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Dashboard}
+    \label{tab:use-case-view-dashboard}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-020 \\
+        \hline
+        \textbf{Use Case Name} & Manage Verification \\
+        \hline
+        \textbf{Primary Actor(s)} & Moderator \\
+        \hline
+        \textbf{Extends} & Request Additional Information, Verify Organization, Approve Requester Request \\
+        \hline
+        \textbf{Description} & This use case describes how a moderator manages the verification process for organizations, requesters, and additional information requests to ensure compliance and legitimacy on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The moderator must be logged into the platform.
+            \item Verification requests must be pending review.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The moderator logs into the platform.
+            \item Access Verification Management: The moderator navigates to the "Verification Management" section.
+            \item Select Verification Task: The moderator selects a verification task from the list (e.g., request additional information, verify organization, approve requester request).
+            \item Perform Task: The moderator performs the selected verification task.
+            \item For Request Additional Information: Requests further details from the requester or organization.
+            \item For Verify Organization: Checks the legitimacy and compliance of the organization.
+            \item For Approve Requester Request: Reviews and approves or rejects requests made by requesters.
+            \item Update Status: The moderator updates the status of the verification task.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Review Additional Information: If additional information is provided, the moderator reviews it and proceeds with the verification task.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The moderator completes the verification task, and relevant stakeholders are updated on the status.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Manage Verification}
+    \label{tab:use-case-manage-verification}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-020-1 \\
+        \hline
+        \textbf{Use Case Name} & Request Additional Information \\
+        \hline
+        \textbf{Primary Actor(s)} & Moderator \\
+        \hline
+        \textbf{Description} & This use case describes how a moderator requests additional information from a requester or organization to complete the verification process. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The moderator must be logged into the platform.
+            \item A verification task requiring additional information must be pending.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The moderator logs into the platform.
+            \item Access Verification Management: The moderator navigates to the "Verification Management" section.
+            \item Select Request Additional Information: The moderator selects the task to request additional information.
+            \item Request Information: The moderator sends a request for additional details to the requester or organization.
+            \item Receive Response: The requester or organization provides the requested information.
+            \item Review Information: The moderator reviews the additional information provided.
+            \item Update Status: The moderator updates the verification status based on the new information.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Follow-Up: The moderator follows up if the additional information is not provided in a timely manner.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Information Not Received: The platform notifies the moderator if no response is received.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The additional information is reviewed, and the verification task is updated accordingly.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Request Additional Information}
+    \label{tab:use-case-request-additional-information}
+\end{table}
+
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-020-3 \\
+        \hline
+        \textbf{Use Case Name} & Approve Requester Request \\
+        \hline
+        \textbf{Primary Actor(s)} & Moderator \\
+        \hline
+        \textbf{Description} & This use case describes how a moderator reviews and approves or rejects requests made by requesters. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The moderator must be logged into the platform.
+            \item A requester’s request is pending review.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The moderator logs into the platform.
+            \item Access Verification Management: The moderator navigates to the "Verification Management" section.
+            \item Select Approve Requester Request: The moderator selects the task to approve or reject a requester’s request.
+            \item Review Request: The moderator reviews the details of the requester’s request.
+            \item Make Decision: The moderator approves or rejects the request based on the review.
+            \item Update Status: The moderator updates the request status and notifies the requester.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Request Additional Information: The moderator requests more information if needed before making a decision.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Request Issues: The platform notifies the moderator if there are issues with processing the request.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The requester’s request is processed, and the requester is informed of the decision.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Approve Requester Request}
+    \label{tab:use-case-approve-requester-request}
+\end{table}
+
+% ORGANIZATION
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-021 \\
+        \hline
+        \textbf{Use Case Name} & Manage Groups \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization manages its groups, including creating, updating, and deleting groups within the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must have permissions to manage groups.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Group Management: The organization navigates to the "Group Management" section.
+            \item Create Group: The organization creates a new group by providing details such as group name, description, and members.
+            \item Update Group: The organization updates existing group details or membership.
+            \item Delete Group: The organization deletes a group if it is no longer needed.
+            \item Confirm Actions: The platform confirms the creation, update, or deletion of the group.
+            \item Log Out: The organization logs out or exits the group management section.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Modify Group Details: The organization modifies details of a group before creating it.
+            \item Review Group Changes: The organization reviews changes before finalizing updates.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Group Creation Failure: The platform notifies the organization if group creation fails due to missing information or errors.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The group management actions (creation, update, deletion) are successfully completed, and relevant stakeholders are notified.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Manage Groups}
+    \label{tab:use-case-manage-groups}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-022 \\
+        \hline
+        \textbf{Use Case Name} & Customize Organizer Page \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Extends} & Set Preference, Set Sponsor Tiers \\
+        \hline
+        \textbf{Description} & This use case describes how an organization customizes its organizer page, including setting preferences and sponsor tiers to tailor the page to their needs. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item The organization must have the necessary permissions to customize the organizer page.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Organizer Page Customization: The organization navigates to the "Customize Organizer Page" section.
+            \item Set Preferences: The organization sets preferences for page layout, color schemes, and other customizable elements.
+            \item Set Sponsor Tiers: The organization defines sponsor tiers and their associated benefits.
+            \item Save Changes: The organization saves the changes made to the organizer page.
+            \item Review Customizations: The organization reviews the customized organizer page to ensure it meets their needs.
+            \item Log Out: The organization logs out or exits the customization section.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Modify Preferences: The organization modifies preferences multiple times before finalizing them.
+            \item Update Sponsor Tiers: The organization updates sponsor tiers as needed based on feedback or changes in sponsorship.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The organizer page is customized according to the organization’s preferences and sponsor tiers.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Customize Organizer Page}
+    \label{tab:use-case-customize-organizer-page}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-022-1 \\
+        \hline
+        \textbf{Use Case Name} & Set Preferences \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization sets preferences for their organizer page, including layout and design options. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item The organization must have access to the customization settings.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Preferences Settings: The organization navigates to the "Preferences" settings for the organizer page.
+            \item Choose Preferences: The organization selects preferences for layout, color scheme, and other design elements.
+            \item Apply Changes: The organization applies the selected preferences.
+            \item Review Preferences: The organization reviews the updated preferences on the organizer page.
+            \item Save Changes: The organization saves the updated preferences.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Adjust Preferences: The organization adjusts preferences multiple times before applying them.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Preference Application Failure: The platform notifies the organization if preferences fail to apply due to errors.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The organizer page reflects the updated preferences.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Set Preferences}
+    \label{tab:use-case-set-preferences}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-022-2 \\
+        \hline
+        \textbf{Use Case Name} & Set Sponsor Tiers \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization sets and manages sponsor tiers for their organizer page, defining the levels and benefits for sponsors. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item The organization must have access to the sponsor tiers settings.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Sponsor Tiers Settings: The organization navigates to the "Sponsor Tiers" settings.
+            \item Define Tiers: The organization defines different sponsor tiers and their associated benefits.
+            \item Update Benefits: The organization updates the benefits for each sponsor tier as needed.
+            \item Apply Changes: The organization applies the defined sponsor tiers to the organizer page.
+            \item Review Sponsor Tiers: The organization reviews the updated sponsor tiers on the organizer page.
+            \item Save Changes: The organization saves the updated sponsor tiers.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Modify Tiers: The organization modifies sponsor tiers before finalizing them.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Tier Definition Failure: The platform notifies the organization if there are issues with defining or applying sponsor tiers.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The sponsor tiers are set and visible on the organizer page according to the organization’s specifications.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Set Sponsor Tiers}
+    \label{tab:use-case-set-sponsor-tiers}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-023 \\
+        \hline
+        \textbf{Use Case Name} & Collaborate with Organizations \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization collaborates with other organizations for joint initiatives or projects, including communication and coordination. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item The organization must have access to the collaboration features.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Collaboration Tools: The organization navigates to the "Collaborate with Organizations" section.
+            \item Search for Partners: The organization searches for other organizations to collaborate with based on interests and needs.
+            \item Send Collaboration Request: The organization sends a collaboration request to selected organizations.
+            \item Receive Response: The organization receives and reviews responses from the contacted organizations.
+            \item Finalize Collaboration: The organization finalizes the collaboration terms and begins joint activities or projects.
+            \item Log Out: The organization logs out or exits the collaboration section.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Modify Request: The organization modifies the collaboration request before sending it.
+            \item Negotiate Terms: The organization negotiates terms with the responding organizations before finalizing the collaboration.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The collaboration is established, and joint activities or projects are initiated with the participating organizations.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Collaborate with Organizations}
+    \label{tab:use-case-collaborate-with-organizations}
+\end{table}
+
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-024 \\
+        \hline
+        \textbf{Use Case Name} & Post Events \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization posts details about upcoming events on the platform, including event creation, updates, and management. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Event Posting: The organization navigates to the "Post Events" section.
+            \item Create Event: The organization enters event details such as title, description, date, time, location, and other relevant information.
+            \item Add Media: The organization uploads any relevant media, such as images or flyers.
+            \item Publish Event: The organization reviews the event details and publishes the event.
+            \item Review Event: The organization verifies the event listing to ensure accuracy.
+            \item Log Out: The organization logs out or exits the event posting section.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Edit Event: The organization edits event details before finalizing the post.
+            \item Save as Draft: The organization saves the event as a draft to review and complete later.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The event is successfully posted on the platform and is visible to users according to the details provided.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Post Events}
+    \label{tab:use-case-post-events}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-025-1 \\
+        \hline
+        \textbf{Use Case Name} & Update Event Details \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization updates the details of an existing event, such as changing the date, time, or description. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item The organization must have permissions to update event details.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Event Management: The organization navigates to the "Manage Events" section.
+            \item Select Event: The organization selects the event to be updated.
+            \item Update Details: The organization modifies the event details such as date, time, location, or description.
+            \item Save Changes: The organization saves the updated event details.
+            \item Review Update: The organization reviews the updated event to ensure accuracy.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Modify Multiple Details: The organization updates multiple details before saving.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Update Failure: The platform notifies the organization if the update fails due to errors.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The event details are updated and accurately reflected on the platform.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Update Event Details}
+    \label{tab:use-case-update-event-details-option}
+\end{table}
+
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-025-2 \\
+        \hline
+        \textbf{Use Case Name} & Cancel Events \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization cancels an event that is no longer going to take place. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item The organization must have permissions to cancel events.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Event Management: The organization navigates to the "Manage Events" section.
+            \item Select Event: The organization selects the event to be canceled.
+            \item Cancel Event: The organization initiates the cancellation process.
+            \item Confirm Cancellation: The organization confirms the cancellation.
+            \item Notify Users: The platform notifies attendees about the cancellation.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Re-schedule Instead: The organization decides to reschedule the event instead of canceling.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Cancellation Failure: The platform notifies the organization if cancellation fails due to errors.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The event is canceled, and attendees are notified.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Cancel Events}
+    \label{tab:use-case-cancel-events}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-025-3 \\
+        \hline
+        \textbf{Use Case Name} & View Event Feedback \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization views feedback provided by attendees for its events. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item Feedback must have been collected for the event.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Event Management: The organization navigates to the "Manage Events" section.
+            \item Select Event: The organization selects the event for which feedback is to be viewed.
+            \item View Feedback: The organization reviews the feedback provided by attendees.
+            \item Analyze Feedback: The organization analyzes the feedback to gain insights.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Filter Feedback: The organization filters feedback by specific criteria (e.g., positive, negative).
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Feedback Access Issues: The platform notifies the organization if there are issues accessing feedback.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Feedback is reviewed, and insights are gained for future event improvements.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: View Event Feedback}
+    \label{tab:use-case-view-event-feedback}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-025-4 \\
+        \hline
+        \textbf{Use Case Name} & Set Event Posts \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization sets or updates promotional posts related to their events. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item The organization must have access to the event posting tools.
+        \end{itemize} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Event Management: The organization navigates to the "Manage Events" section.
+            \item Select Event: The organization selects the event for which promotional posts are to be set.
+            \item Create/Update Posts: The organization creates or updates promotional posts with relevant details and media.
+            \item Schedule Posts: The organization schedules posts to be published at specific times.
+            \item Save Changes: The organization saves the scheduled posts.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Review and Adjust Posts: The organization reviews scheduled posts and makes adjustments as needed.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Promotional posts are set and scheduled to be published for the event.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Set Event Posts}
+    \label{tab:use-case-set-event-posts}
+\end{table}
+
+
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-026 \\
+        \hline
+        \textbf{Use Case Name} & Generate Report \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization generates reports related to their events, activities, or other relevant data on the platform. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item The organization must have access to reporting tools.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Report Generation: The organization navigates to the "Generate Report" section.
+            \item Select Report Type: The organization selects the type of report to generate (e.g., event performance, feedback summary).
+            \item Specify Parameters: The organization sets the parameters for the report, such as date range, event type, or specific metrics.
+            \item Generate Report: The organization initiates the report generation process.
+            \item Review Report: The organization reviews the generated report for accuracy and completeness.
+            \item Download/Export: The organization downloads or exports the report in the desired format (e.g., PDF, Excel).
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Modify Parameters: The organization adjusts report parameters before generating the final report.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The report is successfully generated, reviewed, and available for download or export.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Generate Report}
+    \label{tab:use-case-generate-report}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-027 \\
+        \hline
+        \textbf{Use Case Name} & Request Sponsors \\
+        \hline
+        \textbf{Primary Actor(s)} & Organization \\
+        \hline
+        \textbf{Description} & This use case describes how an organization requests sponsorship from potential sponsors for their events or activities. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item The organization must be logged into the platform.
+            \item The organization must have details about the event or activity requiring sponsorship.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The organization logs into the platform.
+            \item Access Sponsorship Request: The organization navigates to the "Request Sponsors" section.
+            \item Create Sponsorship Request: The organization fills out a sponsorship request form with details about the event or activity, including the sponsorship amount, benefits for the sponsor, and any other relevant information.
+            \item Submit Request: The organization submits the completed sponsorship request form.
+            \item Acknowledge Submission: The platform sends a confirmation message indicating that the request has been successfully submitted and is under review.
+            \item Follow Up: The organization may follow up with potential sponsors if necessary.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Edit Request: The organization edits the sponsorship request details before final submission.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Submission Failure: The platform notifies the organization if the request submission fails due to errors.
+            \item Missing Information: The platform notifies the organization if required fields are missing or incomplete.
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item The sponsorship request is submitted, and the organization receives confirmation of receipt.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Request Sponsors}
+    \label{tab:use-case-request-sponsors}
+\end{table}
+
+
+\clearpage
